@@ -1,0 +1,79 @@
+﻿   
+@*
+// 项目展示地址:"http://www.ddxc.org/"
+ // 如果你有什么好的建议或者觉得可以加什么功能，请加QQ群：104390185 大家交流沟通
+// 项目展示地址:"http://www.yoyocms.com/"
+//博客地址：http://www.cnblogs.com/wer-ltm/
+//代码生成器帮助文档：http://www.cnblogs.com/wer-ltm/p/5777190.html
+// <Author-作者>角落的白板笔</Author-作者>
+// Copyright © YoYoCms@中国.2017-06-20T11:53:16. All Rights Reserved.
+//<生成时间>2017-06-20T11:53:16</生成时间>*@
+
+
+ 
+ <div>
+    <form name="providerCreateOrEditForm" role="form" novalidate class="form-validation">
+        <div class="modal-header">
+            <h4 class="modal-title">
+                <span ng-if="vm.provider.id">编辑信息:{{vm.provider.name}}</span>
+                <span ng-if="!vm.provider.id">新增信息</span>
+            </h4>
+        </div>
+        <div class="modal-body">
+            
+
+																								
+           <div class="form-group form-md-line-input form-md-floating-label no-hint">
+                <input type="text" class="form-control" name="ProviderName" ng-class="{'edited':vm.provider.providerName}" ng-model="vm.provider.providerName"  maxlength="64"     required      />
+                <label>供应商名称</label>
+								  <span class="help-block">     @L("ProviderName")@L("MustBe_Required")</span>
+				              </div>
+									
+           <div class="form-group form-md-line-input form-md-floating-label no-hint">
+                <input type="text" class="form-control" name="ProviderId" ng-class="{'edited':vm.provider.providerId}" ng-model="vm.provider.providerId"  maxlength="16"     required      />
+                <label>供应商编号</label>
+								  <span class="help-block">     @L("ProviderId")@L("MustBe_Required")</span>
+				              </div>
+									
+           <div class="form-group form-md-line-input form-md-floating-label no-hint">
+                <input type="text" class="form-control" name="ShortName" ng-class="{'edited':vm.provider.shortName}" ng-model="vm.provider.shortName"  maxlength="16"         />
+                <label>简称</label>
+				            </div>
+										 
+            <div class="form-group form-md-line-input form-md-floating-label no-hint">
+                <input type="text" class="form-control" name="ProviderType" ng-class="{'edited':vm.provider.providerType}" ng-model="vm.provider.providerType"  maxlength="16"     required      />
+                <label>供应商种类</label>
+								  <span class="help-block">     @L("ProviderType")@L("MustBe_Required")</span>
+				              </div>
+			
+									
+           <div class="form-group form-md-line-input form-md-floating-label no-hint">
+                <input type="text" class="form-control" name="Address" ng-class="{'edited':vm.provider.address}" ng-model="vm.provider.address"  maxlength="128"         />
+                <label>地址</label>
+				            </div>
+									
+           <div class="form-group form-md-line-input form-md-floating-label no-hint">
+                <input type="text" class="form-control" name="BusinessPhone" ng-class="{'edited':vm.provider.businessPhone}" ng-model="vm.provider.businessPhone"  maxlength="16"         />
+                <label>商务电话</label>
+				            </div>
+									
+           <div class="form-group form-md-line-input form-md-floating-label no-hint">
+                <input type="text" class="form-control" name="BusinessContact" ng-class="{'edited':vm.provider.businessContact}" ng-model="vm.provider.businessContact"  maxlength="16"         />
+                <label>商务联系人</label>
+				            </div>
+									
+           <div class="form-group form-md-line-input form-md-floating-label no-hint">
+                <input type="text" class="form-control" name="Owner" ng-class="{'edited':vm.provider.owner}" ng-model="vm.provider.owner"  maxlength="16"         />
+                <label>所有者</label>
+				            </div>
+					
+
+           
+
+        </div>
+        <div class="modal-footer">
+            <button ng-disabled="vm.saving" type="button" class="btn btn-default" ng-click="vm.cancel()">@L("Cancel")</button>
+            <button type="submit" button-busy="vm.saving" busy-text="@L("SavingWithThreeDot")" class="btn btn-primary blue" ng-click="vm.save()" ng-disabled="exampleForm.$invalid"><i class="fa fa-save"></i> <span>@L("Save")</span></button>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,21 @@
+﻿DEBUG 2017-06-16 11:46:10,514 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2017-06-16 11:46:10,774 [1    ] Abp.Modules.AbpModuleManager             - Found 9 ABP modules in total.
+DEBUG 2017-06-16 11:46:10,780 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: MyCompanyName.AbpZeroTemplate.Migrator.AbpZeroTemplateMigratorModule, MyCompanyName.AbpZeroTemplate.Migrator, Version=3.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-06-16 11:46:10,783 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: MyCompanyName.AbpZeroTemplate.AbpZeroTemplateDataModule, MyCompanyName.AbpZeroTemplate.EntityFramework, Version=3.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-06-16 11:46:10,783 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=1.4.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-06-16 11:46:10,783 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=1.4.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-06-16 11:46:10,784 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=1.4.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-06-16 11:46:10,784 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=1.4.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-06-16 11:46:10,784 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: MyCompanyName.AbpZeroTemplate.AbpZeroTemplateCoreModule, MyCompanyName.AbpZeroTemplate.Core, Version=3.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-06-16 11:46:10,784 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.Ldap.AbpZeroLdapModule, Abp.Zero.Ldap, Version=1.4.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-06-16 11:46:10,785 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=1.4.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-06-16 11:46:10,788 [1    ] Abp.Modules.AbpModuleManager             - 9 modules loaded.
+DEBUG 2017-06-16 11:46:11,653 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: MyCompanyName.AbpZeroTemplate.EntityFramework.AbpZeroTemplateDbContext, MyCompanyName.AbpZeroTemplate.EntityFramework, Version=3.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-06-16 11:46:12,167 [1    ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2017-06-16 11:46:12,175 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2017-06-16 11:46:12,180 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2017-06-16 11:46:12,206 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZeroTemplate
+DEBUG 2017-06-16 11:46:12,283 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 1 classes define auto mapping attributes
+DEBUG 2017-06-16 11:46:12,283 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - MyCompanyName.AbpZeroTemplate.Friendships.Cache.FriendCacheItem
+INFO  2017-06-16 11:46:14,201 [1    ] CompanyName.AbpZeroTemplate.Migrator.Log - Host database: Server=localhost; Database=AbpZeroTemplate; Trusted_Connection=True;
+INFO  2017-06-16 11:46:14,202 [1    ] CompanyName.AbpZeroTemplate.Migrator.Log - Continue to migration for this host database and all tenants..? (Y/N): 

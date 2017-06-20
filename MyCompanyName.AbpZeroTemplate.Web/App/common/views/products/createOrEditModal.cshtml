@@ -1,0 +1,50 @@
+﻿<div>
+    <form name="productCreateOrEditForm" role="form" novalidate class="form-validation">
+        <div class="modal-header">
+            <h4 class="modal-title">
+                <span ng-if="vm.product.id">编辑信息:{{vm.product.name}}</span>
+                <span ng-if="!vm.product.id">新增信息</span>
+            </h4>
+        </div>
+        <div class="modal-body">																						
+            <div class="form-group form-md-line-input form-md-floating-label no-hint">
+                <input type="text" class="form-control" name="ProductId" ng-class="{'edited':vm.product.productId}" ng-model="vm.product.productId" maxlength="16" required />
+                <label>产品编号</label>
+                <span class="help-block">     @L("ProductId")@L("MustBe_Required")</span>
+            </div>	              
+									
+            <div class="form-group form-md-line-input form-md-floating-label no-hint">
+                <input type="text" class="form-control" name="ProductName" ng-class="{'edited':vm.product.productName}" ng-model="vm.product.productName" maxlength="32" required />
+                <label>产品名称</label>
+                <span class="help-block">     @L("ProductName")@L("MustBe_Required")</span>
+            </div>              
+									
+            <div class="form-group form-md-line-input form-md-floating-label no-hint">
+                <input type="text" class="form-control" name="Classify" ng-class="{'edited':vm.product.classify}" ng-model="vm.product.classify" maxlength="16" required />
+                <label>分类</label>
+                <span class="help-block">     @L("Classify")@L("MustBe_Required")</span>
+            </div>
+									
+            <div class="form-group form-md-line-input form-md-floating-label no-hint">
+                <input type="text" class="form-control" name="Comment" ng-class="{'edited':vm.product.comment}" ng-model="vm.product.comment" maxlength="128" />
+                <label>备注</label>
+            </div>
+									
+            <div class="form-group form-md-line-input form-md-floating-label no-hint">
+                <input type="text" class="form-control" name="BusinessCategory" ng-class="{'edited':vm.product.businessCategory}" ng-model="vm.product.businessCategory" maxlength="16" required />
+                <label>业务大类</label>
+                <span class="help-block">     @L("BusinessCategory")@L("MustBe_Required")</span>
+            </div>
+									
+            <div class="form-group form-md-line-input form-md-floating-label no-hint">
+                <input type="text" class="form-control" name="BusinessType" ng-class="{'edited':vm.product.businessType}" ng-model="vm.product.businessType" maxlength="16" required />
+                <label>业务类型</label>
+                <span class="help-block">     @L("BusinessType")@L("MustBe_Required")</span>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button ng-disabled="vm.saving" type="button" class="btn btn-default" ng-click="vm.cancel()">@L("Cancel")</button>
+            <button type="submit" button-busy="vm.saving" busy-text="@L("SavingWithThreeDot")" class="btn btn-primary blue" ng-click="vm.save()" ng-disabled="exampleForm.$invalid"><i class="fa fa-save"></i> <span>@L("Save")</span></button>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,61 @@
+﻿ 
+  
+
+
+// 项目展示地址:"http://www.ddxc.org/"
+ // 如果你有什么好的建议或者觉得可以加什么功能，请加QQ群：104390185大家交流沟通
+// 项目展示地址:"http://www.yoyocms.com/"
+//博客地址：http://www.cnblogs.com/wer-ltm/
+//代码生成器帮助文档：http://www.cnblogs.com/wer-ltm/p/5777190.html
+// <Author-作者>角落的白板笔</Author-作者>
+// Copyright © YoYoCms@中国.2017-06-20T13:43:53. All Rights Reserved.
+//<生成时间>2017-06-20T13:43:53</生成时间>
+
+ (function () {
+    appModule.controller('common.views.products.createOrEditModal', [
+         '$scope', '$uibModalInstance', 'abp.services.app.product', 'productId',
+        function ($scope, $uibModalInstance, productService, productId) {
+            var vm = this;
+            vm.saving = false;
+            //首先将product数据设置为null
+            vm.product = null;
+
+             
+
+            //触发保存方法
+            vm.save = function () {
+                vm.saving = true;
+                productService.createOrUpdateProductAsync({ productEditDto:vm.product }).then(function() {
+                    abp.notify.info(app.localize('SavedSuccessfully'));
+                    $uibModalInstance.close();
+                }).finally(function() {
+                    vm.saving = false;
+                });
+
+
+            };
+            //取消关闭页面
+            vm.cancel = function () {
+                $uibModalInstance.dismiss();
+            };
+
+            //初始化页面
+            function init() {
+             //   console.log(productId);
+                productService.getProductForEditAsync({
+                    id: productId
+                }).then(function (result) {
+              //      console.log(result);
+                    //console.log(result.data);
+                    vm.product = result.data.product;
+					
+																																																																												 
+				 
+
+                });
+            }
+            //执行初始化方法
+            init();
+        }
+    ]);
+})();
